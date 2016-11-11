@@ -23,16 +23,15 @@
 package si.mazi.rescu;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import java.lang.annotation.Annotation;
+import java.util.HashMap;
+import java.util.Map;
+import javax.net.ssl.HostnameVerifier;
+import javax.net.ssl.SSLSocketFactory;
 import oauth.signpost.OAuthConsumer;
 import si.mazi.rescu.serialization.jackson.DefaultJacksonObjectMapperFactory;
 import si.mazi.rescu.serialization.jackson.JacksonConfigureListener;
 import si.mazi.rescu.serialization.jackson.JacksonObjectMapperFactory;
-
-import javax.net.ssl.HostnameVerifier;
-import javax.net.ssl.SSLSocketFactory;
-import java.lang.annotation.Annotation;
-import java.util.HashMap;
-import java.util.Map;
 
 public class ClientConfig {
 

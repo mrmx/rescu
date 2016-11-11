@@ -26,9 +26,8 @@ package si.mazi.rescu.serialization.jackson;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import org.testng.annotations.Test;
-
 import java.io.IOException;
+import org.testng.annotations.Test;
 
 /**
  *

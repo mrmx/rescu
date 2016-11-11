@@ -22,6 +22,14 @@
 package si.mazi.rescu;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import java.io.IOException;
+import java.lang.reflect.InvocationHandler;
+import java.lang.reflect.Method;
+import java.net.HttpURLConnection;
+import java.util.HashMap;
+import java.util.Map;
+import javax.ws.rs.Path;
+import javax.ws.rs.core.MediaType;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import si.mazi.rescu.serialization.PlainTextResponseReader;
@@ -30,15 +38,6 @@ import si.mazi.rescu.serialization.jackson.DefaultJacksonObjectMapperFactory;
 import si.mazi.rescu.serialization.jackson.JacksonObjectMapperFactory;
 import si.mazi.rescu.serialization.jackson.JacksonRequestWriter;
 import si.mazi.rescu.serialization.jackson.JacksonResponseReader;
-
-import javax.ws.rs.Path;
-import javax.ws.rs.core.MediaType;
-import java.io.IOException;
-import java.lang.reflect.InvocationHandler;
-import java.lang.reflect.Method;
-import java.net.HttpURLConnection;
-import java.util.HashMap;
-import java.util.Map;
 
 /**
  * @author Matija Mazi

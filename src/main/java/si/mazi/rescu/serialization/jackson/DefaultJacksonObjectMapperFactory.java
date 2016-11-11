@@ -23,9 +23,9 @@
  */
 package si.mazi.rescu.serialization.jackson;
 
+import com.fasterxml.jackson.core.JsonGenerator.Feature;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.databind.SerializationFeature;
 
 /**
  * Default implementation for JacksonObjectMapperFactory
@@ -50,7 +50,7 @@ public class DefaultJacksonObjectMapperFactory implements JacksonObjectMapperFac
     public void configureObjectMapper(ObjectMapper objectMapper) {
         objectMapper.setAnnotationIntrospector(new IgnoreThrowableProperties());
         objectMapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
-        objectMapper.configure(SerializationFeature.WRITE_BIGDECIMAL_AS_PLAIN, true);
+        objectMapper.configure(Feature.WRITE_BIGDECIMAL_AS_PLAIN, true);
     }
 
     /**

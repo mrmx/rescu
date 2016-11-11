@@ -25,20 +25,18 @@ package si.mazi.rescu.serialization.jackson;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import static com.googlecode.catchexception.CatchException.catchException;
+import static com.googlecode.catchexception.CatchException.caughtException;
+import java.lang.reflect.Type;
+import java.util.Map;
+import javax.ws.rs.core.MediaType;
+import static org.assertj.core.api.Assertions.assertThat;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.testng.annotations.Test;
 import si.mazi.rescu.*;
 import si.mazi.rescu.dto.DummyTicker;
 import si.mazi.rescu.dto.GenericResult;
-
-import javax.ws.rs.core.MediaType;
-import java.lang.reflect.Type;
-import java.util.Map;
-
-import static com.googlecode.catchexception.CatchException.catchException;
-import static com.googlecode.catchexception.CatchException.caughtException;
-import static org.assertj.core.api.Assertions.assertThat;
 
 /**
  *

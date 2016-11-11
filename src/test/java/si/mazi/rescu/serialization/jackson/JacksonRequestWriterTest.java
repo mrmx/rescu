@@ -24,16 +24,14 @@
 
 package si.mazi.rescu.serialization.jackson;
 
+import java.util.ArrayList;
+import javax.ws.rs.core.MediaType;
+import static org.testng.Assert.assertEquals;
 import org.testng.annotations.Test;
 import si.mazi.rescu.HttpMethod;
 import si.mazi.rescu.RestInvocation;
 import si.mazi.rescu.RestMethodMetadata;
 import si.mazi.rescu.dto.DummyAccountInfo;
-
-import javax.ws.rs.core.MediaType;
-import java.util.ArrayList;
-
-import static org.testng.Assert.assertEquals;
 
 /**
  *
